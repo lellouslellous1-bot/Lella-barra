@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Lella Barra | للا برا</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-ar]').forEach(el=>{
+    el.innerText = el.getAttribute('data-'+lang);
+  });
+}
+</script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="lang">
+    <button onclick="setLang('ar')">AR</button>
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+
+  <h1 class="title" data-ar="للا برا" data-fr="Lella Barra" data-en="Lella Barra">
+    للا برا
+    <span>LELLA BARRA</span>
+  </h1>
+
+  <p class="subtitle"
+     data-ar="عقارات مختارة للبيع في جربة"
+     data-fr="Biens immobiliers à vendre à Djerba"
+     data-en="Selected properties for sale in Djerba">
+     عقارات مختارة للبيع في جربة
+  </p>
+
+  <div class="contact">
+    <a href="tel:+216014717">📞 00216014717</a>
+    <a class="whatsapp" href="https://wa.me/216014717">💬 واتساب</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2 data-ar="🏠 تفاصيل العرض" data-fr="🏠 Détails de l'offre" data-en="🏠 Offer details">🏠 تفاصيل العرض</h2>
+
+  <div class="card">
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+      <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+    </div>
+
+    <div class="info">
+      <p><strong data-ar="نوع العقار:" data-fr="Type:" data-en="Type:">نوع العقار:</strong>
+      <span data-ar="شقة" data-fr="Appartement" data-en="Apartment">شقة</span></p>
+
+      <p><strong data-ar="الموقع:" data-fr="Lieu:" data-en="Location:">الموقع:</strong> مزراية – جربة</p>
+
+      <p><strong data-ar="السعر:" data-fr="Prix:" data-en="Price:">السعر:</strong> 300,000 د.ت</p>
+
+      <p data-ar="شقة مجهزة، موقع هادئ، قريبة من الخدمات."
+         data-fr="Appartement équipé, quartier calme, proche des services."
+         data-en="Equipped apartment, quiet area, close to services.">
+         شقة مجهزة، موقع هادئ، قريبة من الخدمات.
+      </p>
+
+      <div class="actions">
+        <a href="tel:+216014717">📞 اتصل الآن</a>
+        <a class="whatsapp" href="https://wa.me/216014717">💬 واتساب</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 Lella Barra</footer>
+</body>
+</html>

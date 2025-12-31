@@ -1,0 +1,59 @@
+
+body {
+  margin:0;
+  font-family:'Cairo',sans-serif;
+  background:#111;
+  color:#fff;
+}
+.hero {
+  min-height:100vh;
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+.brand-title {
+  font-size:4rem;
+  font-weight:800;
+}
+.brand-title span {
+  display:block;
+  font-size:1.4rem;
+  letter-spacing:5px;
+  opacity:.9;
+}
+.brand-tagline {
+  margin:20px 0 30px;
+  font-size:1.1rem;
+}
+.contact a {
+  display:inline-block;
+  margin:8px;
+  padding:12px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#fff;
+}
+.contact .whatsapp { background:#25D366; }
+.contact a:not(.whatsapp) { background:#444; }
+.listing {
+  background:#fff;
+  color:#111;
+  padding:40px;
+  text-align:center;
+}
+footer {
+  background:#000;
+  padding:15px;
+  text-align:center;
+  font-size:.9rem;
+}
+@media(max-width:768px){
+  .brand-title{font-size:2.5rem;}
+}
